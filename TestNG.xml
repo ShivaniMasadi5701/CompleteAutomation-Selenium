@@ -12,43 +12,14 @@
 	<parameter name="username" value="Admin"></parameter>
 	<parameter name="password" value="admin123"></parameter>
 
-<test name="All">		
+	<test name="All">
 		<classes>
-			<!--<class name="com.orangehrm.login.test.CrossBrowserLoginTest"></class>	-->
-			<class name="com.orangehrm.login.test.LoginTest"></class>			
+			<class name="com.orangehrm.login.test.LoginTest"></class>
 			<class name="com.orangehrm.login.test.ForgotYourPasswordTest"></class>
 			<class name="com.orangehrm.admin.test.UserManagementTest"></class>
-		
-		</classes>
-	</test>
-
-	<!--<test name="Login into ORANGEHRM">
-
-		<classes>
-			<class name="com.orangehrm.login.test.ParameterizedTesting">	
-				
-			</class>
-			
-		</classes>
-	</test>-->
-
-	<!--<test name="Forgot Password">
-		<parameter name="browser" value="edge"></parameter>
-		<classes>
-			<class name="com.orangehrm.login.test.ForgotYourPasswordTest">
-						</class>
-		</classes>
-	</test>-->
-
-<!--<test name="Admin-UserMangement">		
-		<classes>
-			<class name="com.orangehrm.admin.test.UserManagementTest">
-			</class>
 			<class name="com.orangehrm.admin.test.AddUserTest"></class>
 		</classes>
-	</test>-->
-
-
+	</test>
 </suite> 
 
            
