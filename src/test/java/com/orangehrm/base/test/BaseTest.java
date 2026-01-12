@@ -71,7 +71,21 @@ public class BaseTest {
 		logger.info("Starting getBrowserAndWebsite method");
 
 		if (browser.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+
+// 👉 Tell Selenium where Chrome is
+options.setBinary("C:\\chrome\\chrome-win64\\chrome.exe");
+
+// 👉 Required for Jenkins
+options.addArguments("--headless=new");
+options.addArguments("--no-sandbox");
+options.addArguments("--disable-dev-shm-usage");
+
+System.setProperty("webdriver.chrome.driver",
+        "C:\\chromedriver\\chromedriver.exe");
+
+driver = new ChromeDriver(options);
+
 		} else if (browser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 		} else {
