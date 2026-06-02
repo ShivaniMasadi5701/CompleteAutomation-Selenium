@@ -1,13 +1,3 @@
-# Test Reports
-test-output/
+Reports/
 allure-results/
-allure-report/
-reports/
-extent-reports/
-
-# Logs
-logs/
-*.log
-
-# Screenshots
-screenshots/
+*.html
