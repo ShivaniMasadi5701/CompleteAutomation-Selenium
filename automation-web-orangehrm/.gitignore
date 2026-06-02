@@ -1,1 +1,13 @@
-/target/
+# Test Reports
+test-output/
+allure-results/
+allure-report/
+reports/
+extent-reports/
+
+# Logs
+logs/
+*.log
+
+# Screenshots
+screenshots/

@@ -1,0 +1,6 @@
+com\orangehrm\base\page\BasePage.class
+com\orangehrm\admin\page\UserManagementPage.class
+com\orangehrm\login\page\LoginPage.class
+com\orangehrm\myinfo\page\myinfoPage.class
+com\orangehrm\admin\page\AddUserPage.class
+com\orangehrm\login\page\ForgotYourPasswordPage.class

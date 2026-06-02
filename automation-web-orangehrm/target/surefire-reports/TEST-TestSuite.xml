@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.402" tests="31" errors="0" skipped="24" failures="6">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\DELL\eclipse-workspace\eclipse-HONO\HONOHR-GITHUB\automation-web-orangehrm\target\test-classes;C:\Users\DELL\eclipse-workspace\eclipse-HONO\HONOHR-GITHUB\automation-web-orangehrm\target\classes;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\DELL\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\DELL\.m2\repository\io\github\bonigarcia\webdrivermanager\5.4.0\webdrivermanager-5.4.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java\3.3.1\docker-java-3.3.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-core\3.3.1\docker-java-core-3.3.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-api\3.3.1\docker-java-api-3.3.1.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.1\docker-java-transport-httpclient5-3.3.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport\3.3.1\docker-java-transport-3.3.1.jar;C:\Users\DELL\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\DELL\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\DELL\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\DELL\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\DELL\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-csv\1.8\commons-csv-1.8.jar;C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\DELL\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar;C:\Users\DELL\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.14.0\allure-testng-2.14.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\DELL\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\DELL\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\DELL\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\DELL\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\DELL\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\DELL\.m2\repository\io\appium\java-client\7.4.1\java-client-7.4.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\DELL\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\DELL\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\DELL\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\DELL\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\DELL\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-context\5.3.1\spring-context-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-aop\5.3.1\spring-aop-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-beans\5.3.1\spring-beans-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;C:\Users\DELL\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\DELL\.m2\repository\com\github\romankh3\image-comparison\4.3.0\image-comparison-4.3.0.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\DELL\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\DELL\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http-jdk-client\4.8.1\selenium-http-jdk-client-4.8.1.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.8.1\selenium-http-4.8.1.jar;C:\Users\DELL\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire6740931200772884130\surefirebooter-20260530131521075_3.jar C:\Users\DELL\AppData\Local\Temp\surefire6740931200772884130 2026-05-30T13-15-20_791-jvmRun1 surefire-20260530131521075_1tmp surefire_0-20260530131521075_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\DELL\eclipse-workspace\eclipse-HONO\HONOHR-GITHUB\automation-web-orangehrm\target\test-classes;C:\Users\DELL\eclipse-workspace\eclipse-HONO\HONOHR-GITHUB\automation-web-orangehrm\target\classes;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\DELL\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\DELL\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\DELL\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\DELL\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\DELL\.m2\repository\io\github\bonigarcia\webdrivermanager\5.4.0\webdrivermanager-5.4.0.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java\3.3.1\docker-java-3.3.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-core\3.3.1\docker-java-core-3.3.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-api\3.3.1\docker-java-api-3.3.1.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\DELL\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.1\docker-java-transport-httpclient5-3.3.1.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport\3.3.1\docker-java-transport-3.3.1.jar;C:\Users\DELL\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\DELL\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\DELL\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\DELL\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\DELL\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-csv\1.8\commons-csv-1.8.jar;C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\DELL\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar;C:\Users\DELL\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.14.0\allure-testng-2.14.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\DELL\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\DELL\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\DELL\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\DELL\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\DELL\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\DELL\.m2\repository\io\appium\java-client\7.4.1\java-client-7.4.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\DELL\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\DELL\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\DELL\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\DELL\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\DELL\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-context\5.3.1\spring-context-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-aop\5.3.1\spring-aop-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-beans\5.3.1\spring-beans-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;C:\Users\DELL\.m2\repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;C:\Users\DELL\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\DELL\.m2\repository\com\github\romankh3\image-comparison\4.3.0\image-comparison-4.3.0.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\DELL\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\DELL\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http-jdk-client\4.8.1\selenium-http-jdk-client-4.8.1.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.8.1\selenium-http-4.8.1.jar;C:\Users\DELL\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DELL"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-09-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\DELL\eclipse-workspace\eclipse-HONO\HONOHR-GITHUB\automation-web-orangehrm"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire6740931200772884130\surefirebooter-20260530131521075_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21+35-LTS-2513"/>
+    <property name="user.name" value="DELL"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
+    <property name="java.version" value="21"/>
+    <property name="user.dir" value="C:\Users\DELL\eclipse-workspace\eclipse-HONO\HONOHR-GITHUB\automation-web-orangehrm"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-21\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\ProgramData\chocolatey\bin;C:\Users\DELL\AppData\Local\Programs\Python\Python313;C:\Users\DELL\AppData\Local\Programs\Python\Python313\Scripts;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\DELL\.local\bin;C:\Program Files\apache-maven-3.9.12\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\DELL\scoop\shims;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.2\bin;;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DELL\AppData\Local\Programs\cursor\resources\app\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21+35-LTS-2513"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="initBrowserAndWebsite" classname="com.orangehrm.admin.test.AddUserTest" time="1.867">
+    <failure message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Starting verifyBeforeSuite Method
+2026-05-30 13:15:23,415 [main] INFO  com.orangehrm.base.test.BaseTest  - Starting verifyBeforeSuite Method
+2026-05-30 13:15:23,652 [main] INFO  com.orangehrm.util.Listeners.TestListener  - In onStart method Surefire test
+Starting verifyBeforeTest Method
+2026-05-30 13:15:23,659 [main] INFO  com.orangehrm.base.test.BaseTest  - Starting verifyBeforeTest Method
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyAddUserPage" classname="com.orangehrm.admin.test.AddUserTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:23,942 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifyAddUserPage test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyAfterClass" classname="com.orangehrm.admin.test.AddUserTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[2026-05-30 13:15:23,961 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifyAddUserPage test is skipped.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyAfterTest" classname="com.orangehrm.admin.test.AddUserTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterSuite" classname="com.orangehrm.admin.test.AddUserTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAfterSuite" classname="com.orangehrm.admin.test.AddUserTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="initBrowserAndWebsite" classname="com.orangehrm.admin.test.UserManagementTest" time="0.041">
+    <failure message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="VerifyAdminMenuItem" classname="com.orangehrm.admin.test.UserManagementTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:23,991 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifyAdminMenuItem test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="VerifySearchSystemUsersByAllFieldsBlank" classname="com.orangehrm.admin.test.UserManagementTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:24,002 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifyAdminMenuItem test is skipped.
+2026-05-30 13:15:24,009 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifySearchSystemUsersByAllFieldsBlank test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="VerifySearchSystemUsersByEnteringInvalidUsernameOnly" classname="com.orangehrm.admin.test.UserManagementTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:24,021 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifySearchSystemUsersByAllFieldsBlank test is skipped.
+2026-05-30 13:15:24,023 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifySearchSystemUsersByEnteringInvalidUsernameOnly test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="VerifySearchSystemUsersByEnteringValidUsernameOnly" classname="com.orangehrm.admin.test.UserManagementTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:24,034 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifySearchSystemUsersByEnteringInvalidUsernameOnly test is skipped.
+2026-05-30 13:15:24,035 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifySearchSystemUsersByEnteringValidUsernameOnly test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyAfterClass" classname="com.orangehrm.admin.test.UserManagementTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[2026-05-30 13:15:24,044 [main] INFO  com.orangehrm.util.Listeners.TestListener  - VerifySearchSystemUsersByEnteringValidUsernameOnly test is skipped.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginOnDifferentBrowsers[edge](1)" classname="com.orangehrm.login.test.CrossBrowserLoginTest" time="3.489">
+    <failure message="Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\DELL\AppData\Local\Temp\selenium-manager1733275986640006103975072174318377\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]&#10;error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: driver.version: EdgeDriver" type="org.openqa.selenium.remote.NoSuchDriverException"><![CDATA[org.openqa.selenium.remote.NoSuchDriverException: 
+Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\DELL\AppData\Local\Temp\selenium-manager1733275986640006103975072174318377\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+	at com.orangehrm.base.test.BaseTest.setup(BaseTest.java:163)
+	at com.orangehrm.login.test.CrossBrowserLoginTest.verifyLoginOnDifferentBrowsers(CrossBrowserLoginTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [C:\Users\DELL\AppData\Local\Temp\selenium-manager1733275986640006103975072174318377\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:151)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:273)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 21 more
+]]></failure>
+    <system-out><![CDATA[2026-05-30 13:15:24,066 [TestNG-PoolService-0] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginOnDifferentBrowsers test is starting.
+2026-05-30 13:15:24,066 [TestNG-PoolService-1] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginOnDifferentBrowsers test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginOnDifferentBrowsers[chrome](2)" classname="com.orangehrm.login.test.CrossBrowserLoginTest" time="23.512">
+    <system-out><![CDATA[2026-05-30 13:15:27,558 [TestNG-PoolService-1] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginOnDifferentBrowsers test is failed.
+2026-05-30 13:15:27,559 [TestNG-PoolService-1] INFO  com.orangehrm.util.Listeners.TestListener  - Screenshot captured for test case:verifyLoginOnDifferentBrowsers
+**********************browsernamechrome
+2026-05-30 13:15:41,707 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - Starting  LoginPage Constructor  method
+2026-05-30 13:15:41,707 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - Ending  LoginPage  Constructor method
+2026-05-30 13:15:46,718 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - starting setUsername Method
+2026-05-30 13:15:47,118 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - Ending  setUsername method
+2026-05-30 13:15:47,118 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - starting setPassword Method
+2026-05-30 13:15:47,397 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - Ending  setPassword method
+2026-05-30 13:15:47,397 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - starting clickOnLoginButton Method
+2026-05-30 13:15:47,573 [TestNG-PoolService-0] INFO  com.orangehrm.login.page.LoginPage  - Ending  clickOnLoginButton method
+]]></system-out>
+    <system-err><![CDATA[May 30, 2026 1:15:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 30, 2026 1:15:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.181. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLoginOnDifferentBrowsers" classname="com.orangehrm.login.test.CrossBrowserLoginTest" time="23.533">
+    <failure message="java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;driver&quot; is null" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:52)
+	at org.testng.internal.invokers.MethodRunner.runInParallel(MethodRunner.java:132)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:958)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:50)
+	... 26 more
+Caused by: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at com.orangehrm.util.Listeners.TestListener.captureScreenshot(TestListener.java:48)
+	at com.orangehrm.util.Listeners.TestListener.onTestFailure(TestListener.java:96)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:99)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:277)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:764)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[2026-05-30 13:15:47,582 [TestNG-PoolService-0] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginOnDifferentBrowsers test is succeed.
+]]></system-out>
+  </testcase>
+  <testcase name="initBrowserAndWebsite" classname="com.orangehrm.login.test.ForgotYourPasswordTest" time="24.833">
+    <failure message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2026-05-30 13:15:47,599 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginOnDifferentBrowsers test is failed.
+2026-05-30 13:15:47,601 [main] INFO  com.orangehrm.util.Listeners.TestListener  - Screenshot captured for test case:verifyLoginOnDifferentBrowsers
+Screenshot saved: C:\Users\DELL\eclipse-workspace\eclipse-HONO\automation-web-orangehrm\test-output\screenshot-reports\failure_screenshots\verifyLoginOnDifferentBrowsers_30_05_2026_13_15_47.png
+Ending verifyAfterClass Method
+2026-05-30 13:15:48,887 [main] INFO  com.orangehrm.base.test.BaseTest  - Ending verifyAfterClass Method
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringInvalidUsername" classname="com.orangehrm.login.test.ForgotYourPasswordTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:48,906 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsername test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringValidUsername" classname="com.orangehrm.login.test.ForgotYourPasswordTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:48,923 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsername test is skipped.
+2026-05-30 13:15:48,925 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringValidUsername test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifySwitchingWindows" classname="com.orangehrm.login.test.ForgotYourPasswordTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:48,943 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringValidUsername test is skipped.
+2026-05-30 13:15:48,944 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifySwitchingWindows test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyAfterClass" classname="com.orangehrm.login.test.ForgotYourPasswordTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[2026-05-30 13:15:48,956 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifySwitchingWindows test is skipped.
+]]></system-out>
+  </testcase>
+  <testcase name="initBrowserAndWebsite" classname="com.orangehrm.login.test.LoginTest" time="0.035">
+    <failure message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="verifyLoginByLeavingAllFieldsBlank" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:48,985 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByLeavingAllFieldsBlank test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringUsernameFieldLeavingPasswordFieldBlank" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,009 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByLeavingAllFieldsBlank test is skipped.
+2026-05-30 13:15:49,012 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringUsernameFieldLeavingPasswordFieldBlank test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringInvalidUsernameFieldLeavingPasswordFieldBlank" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,049 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringUsernameFieldLeavingPasswordFieldBlank test is skipped.
+2026-05-30 13:15:49,060 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsernameFieldLeavingPasswordFieldBlank test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringPasswordFieldLeavingUsernameFieldBlank" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,081 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsernameFieldLeavingPasswordFieldBlank test is skipped.
+2026-05-30 13:15:49,088 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringPasswordFieldLeavingUsernameFieldBlank test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringInvalidPasswordFieldLeavingUsernameFieldBlank" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,114 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringPasswordFieldLeavingUsernameFieldBlank test is skipped.
+2026-05-30 13:15:49,115 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidPasswordFieldLeavingUsernameFieldBlank test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringInvalidUsernameValidPasswordFields" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,131 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidPasswordFieldLeavingUsernameFieldBlank test is skipped.
+2026-05-30 13:15:49,139 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsernameValidPasswordFields test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringValidUsernameInvalidPasswordFields" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,155 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsernameValidPasswordFields test is skipped.
+2026-05-30 13:15:49,159 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringValidUsernameInvalidPasswordFields test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByEnteringInvalidUsernameInvalidPasswordFields" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,176 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringValidUsernameInvalidPasswordFields test is skipped.
+2026-05-30 13:15:49,178 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsernameInvalidPasswordFields test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginByValidUsernamePasswordFields" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeClass on method initBrowserAndWebsite but has not been marked @Optional or defined&#10;"/>
+    <system-out><![CDATA[2026-05-30 13:15:49,198 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByEnteringInvalidUsernameInvalidPasswordFields test is skipped.
+2026-05-30 13:15:49,199 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByValidUsernamePasswordFields test is starting.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyAfterClass" classname="com.orangehrm.login.test.LoginTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[2026-05-30 13:15:49,217 [main] INFO  com.orangehrm.util.Listeners.TestListener  - verifyLoginByValidUsernamePasswordFields test is skipped.
+]]></system-out>
+  </testcase>
+</testsuite>

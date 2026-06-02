@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.orangehrm.login.test.ForgotYourPasswordTest">
+        <methods>
+          <include name="initBrowserAndWebsite"/>
+          <include name="afterSuite"/>
+          <include name="verifyBeforeSuite"/>
+          <include name="verifyLoginByEnteringInvalidUsername"/>
+          <include name="verifyBeforeTest"/>
+          <include name="initTestdata"/>
+          <include name="verifyLoginByEnteringValidUsername"/>
+          <include name="verifyAfterSuite"/>
+          <include name="verifyAfterClass"/>
+          <include name="verifyAfterTest"/>
+          <include name="verifySwitchingWindows"/>
+        </methods>
+      </class> <!-- com.orangehrm.login.test.ForgotYourPasswordTest -->
+      <class name="com.orangehrm.admin.test.UserManagementTest">
+        <methods>
+          <include name="VerifySearchSystemUsersByEnteringInvalidUsernameOnly"/>
+          <include name="initBrowserAndWebsite"/>
+          <include name="VerifyAdminMenuItem"/>
+          <include name="VerifySearchSystemUsersByAllFieldsBlank"/>
+          <include name="afterSuite"/>
+          <include name="VerifySearchSystemUsersByEnteringValidUsernameOnly"/>
+          <include name="verifyBeforeSuite"/>
+          <include name="verifyBeforeTest"/>
+          <include name="initTestdata"/>
+          <include name="verifyAfterSuite"/>
+          <include name="verifyAfterTest"/>
+          <include name="verifyAfterClass"/>
+        </methods>
+      </class> <!-- com.orangehrm.admin.test.UserManagementTest -->
+      <class name="com.orangehrm.admin.test.AddUserTest">
+        <methods>
+          <include name="VerifyAddUserPage"/>
+          <include name="afterSuite"/>
+          <include name="verifyBeforeSuite"/>
+          <include name="verifyBeforeTest"/>
+          <include name="initTestdata"/>
+          <include name="verifyAfterSuite"/>
+          <include name="verifyAfterTest"/>
+          <include name="verifyAfterClass"/>
+          <include name="initBrowserAndWebsite"/>
+        </methods>
+      </class> <!-- com.orangehrm.admin.test.AddUserTest -->
+      <class name="com.orangehrm.login.test.CrossBrowserLoginTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="verifyLoginOnDifferentBrowsers" invocation-numbers="1"/>
+          <include name="verifyBeforeSuite"/>
+          <include name="verifyBeforeTest"/>
+          <include name="initTestdata"/>
+          <include name="verifyAfterSuite"/>
+          <include name="verifyAfterClass"/>
+          <include name="verifyAfterTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.login.test.CrossBrowserLoginTest -->
+      <class name="com.orangehrm.login.test.LoginTest">
+        <methods>
+          <include name="verifyLoginByEnteringInvalidUsernameInvalidPasswordFields"/>
+          <include name="verifyLoginByEnteringValidUsernameInvalidPasswordFields"/>
+          <include name="verifyBeforeTest"/>
+          <include name="verifyLoginByEnteringInvalidUsernameValidPasswordFields"/>
+          <include name="initTestdata"/>
+          <include name="verifyLoginByEnteringInvalidPasswordFieldLeavingUsernameFieldBlank"/>
+          <include name="initBrowserAndWebsite"/>
+          <include name="verifyLoginByLeavingAllFieldsBlank"/>
+          <include name="verifyLoginByEnteringUsernameFieldLeavingPasswordFieldBlank"/>
+          <include name="verifyLoginByEnteringPasswordFieldLeavingUsernameFieldBlank"/>
+          <include name="verifyLoginByEnteringInvalidUsernameFieldLeavingPasswordFieldBlank"/>
+          <include name="afterSuite"/>
+          <include name="verifyLoginByValidUsernamePasswordFields"/>
+          <include name="verifyBeforeSuite"/>
+          <include name="verifyAfterSuite"/>
+          <include name="verifyAfterTest"/>
+          <include name="verifyAfterClass"/>
+        </methods>
+      </class> <!-- com.orangehrm.login.test.LoginTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

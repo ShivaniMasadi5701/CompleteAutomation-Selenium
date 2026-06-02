@@ -28,11 +28,11 @@ public class EmailReportSender {
        
        // String reportFilePath = System.getProperty("user.dir") + "/Reports/OrangeHRM_Report_.html";
         
-    	String reportFolder = "/ReportsCustomReports/";
+    	String reportFolder = "/Reports/";
 
         // Generate unique file name using timestamp
-        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String reportFileName = "AdvancedCustomReport_" + timestamp + ".html";
+        String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new Date());
+        String reportFileName = "OrangeHRM_Report_" + timestamp + ".html";
 
         // Full path to the new report file
         String reportFilePath = reportFolder + reportFileName;

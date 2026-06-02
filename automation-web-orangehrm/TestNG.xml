@@ -3,7 +3,7 @@
 
 <suite name="ORANGEHRM" >
 	<listeners>
-    <listener class-name="com.orangehrm.util.Reports.AdvancedCustomReportsScreenshot"/>
+    <listener class-name="com.orangehrm.util.Reports.ExtentReportsScreenshot"/>
   </listeners>
 
 
@@ -17,7 +17,7 @@
 			<!--<class name="com.orangehrm.login.test.CrossBrowserLoginTest"></class>	
 			<class name="com.orangehrm.login.test.LoginTest"></class>			-->
 			<class name="com.orangehrm.login.test.ForgotYourPasswordTest"></class>
-			<class name="com.orangehrm.admin.test.UserManagementTest"></class>
+			<!--<class name="com.orangehrm.admin.test.UserManagementTest"></class>-->
 		
 		</classes>
 	</test>

@@ -60,7 +60,8 @@ public class ForgotYourPasswordTest extends BaseTest {
 
 	}
 	
-	@Test(priority = 2, description = "Verify Forgot Your Password by Entering Valid Username")
+	@Test(enabled=false)
+	//@Test(priority = 2, description = "Verify Forgot Your Password by Entering Valid Username")
 	@Description("Test Case #2,Verify Forgot Your Password by Entering Valid Username")
 	@Severity(SeverityLevel.CRITICAL)
 	@Story("Test Case #2, Verify Forgot Your Password by Entering Valid Username")

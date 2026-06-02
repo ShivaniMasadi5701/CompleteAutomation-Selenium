@@ -77,7 +77,7 @@ public class AdvancedCustomReportsScreenshot implements  ITestListener, IReporte
     	 String reportFolder = outputDirectory + "/CustomReports/";
          new File(reportFolder).mkdirs();
 
-         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmm").format(new Date());
          String reportFileName = "AdvanceReport_" + timestamp + ".html";
          String reportFilePath = reportFolder + reportFileName;
 

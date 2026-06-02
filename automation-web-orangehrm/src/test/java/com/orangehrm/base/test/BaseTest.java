@@ -31,6 +31,7 @@ import com.orangehrm.admin.page.UserManagementPage;
 import com.orangehrm.login.page.ForgotYourPasswordPage;
 import com.orangehrm.login.page.LoginPage;
 import com.orangehrm.util.DataProvider.EmailReportSender;
+import com.orangehrm.util.DataProvider.EmailSender;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -208,7 +209,13 @@ public class BaseTest {
 	}
 
 	@AfterSuite
-	public void afterSuite() {
+	public void afterSuite() throws InterruptedException {
+		 // If using Extent Reports
+	    // extent.flush();
+
+	    Thread.sleep(5000); // Wait for report generation
+
+	    EmailSender.sendEmailWithReport();
 		EmailReportSender.sendEmailWithReport();
 	}
 
