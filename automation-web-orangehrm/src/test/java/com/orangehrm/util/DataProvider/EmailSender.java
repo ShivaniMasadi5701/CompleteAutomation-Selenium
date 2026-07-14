@@ -22,9 +22,7 @@
 
 	        final String fromEmail = System.getenv("SELENIUM_AUTOMATION_EMAILID");
 	        final String password = System.getenv("SELENIUM_AUTOMATION_PASSWORD");
-	        final String toEmail="vijayeswarchilumula@gmail.com";
-	        
-	       //final String toEmail = System.getenv("SELENIUM_AUTOMATION_TO_EMAIL_ID");
+	       	final String toEmail = System.getenv("SELENIUM_AUTOMATION_TO_EMAIL_ID");
 
 	        try {
 
@@ -73,7 +71,7 @@
 	            MimeBodyPart bodyPart = new MimeBodyPart();
 	            bodyPart.setText(
 	                    "Hi,\n\n"
-	                    + "vijayeswarchilumula@gmail.com Shivani is practicing automation code thats the reason you receiving this email. HAHAHAHAHA Please find the attached OrangeHRM automation execution report.\n\n"
+	                    +" Please find the attached OrangeHRM automation execution report.\n\n"
 	                    + "This email is auto generated and will receive everytime the USER - "
 	                    + "Automation Tester Shivani Masadi runs the code"
 	                    +"Thanks.");
