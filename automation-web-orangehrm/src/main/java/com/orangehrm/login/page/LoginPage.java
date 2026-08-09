@@ -100,7 +100,7 @@ public class LoginPage extends BasePage {
 		logger.info("starting isDisplayedOrangeHRMLogo Method");
 		logger.info("Ending  isDisplayedOrangeHRMLogo method");
 		
-		explicitWait(imgOrangeHRMLogo);
+		explicit(imgOrangeHRMLogo);
 		return imgOrangeHRMLogo.isDisplayed();
 	}
 }

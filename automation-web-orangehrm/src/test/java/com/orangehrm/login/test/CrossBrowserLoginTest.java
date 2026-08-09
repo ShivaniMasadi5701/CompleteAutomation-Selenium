@@ -16,7 +16,7 @@ public class CrossBrowserLoginTest extends BaseTest {
 		System.out.println("**********************browsername"+browser);
 
         LoginPage loginPage = new LoginPage(driver);
-        Thread.sleep(5000);
+        
         loginPage.setUsername("Admin");
         loginPage.setPassword("admin123");
         loginPage.clickOnLoginButton();   
