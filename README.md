@@ -1,14 +1,14 @@
 # Complete Automation Selenium Framework
 
-A Selenium WebDriver automation framework developed using Java,
-TestNG and Maven for automating the OrangeHRM web application.
+A Selenium WebDriver automation framework developed using **Java, Selenium WebDriver, TestNG, and Maven** for automating the OrangeHRM web application.
 
 ## Tech Stack
+
 - Java
 - Selenium WebDriver
 - TestNG
 - Maven
-- Page Object Model
+- Page Object Model (POM)
 - WebDriverManager
 - Extent Reports
 - Allure Reports
@@ -16,38 +16,176 @@ TestNG and Maven for automating the OrangeHRM web application.
 - GitHub Actions
 
 ## Framework Features
-- Page Object Model
+
+- Page Object Model (POM)
 - Reusable WebDriver utilities
 - Explicit waits
 - TestNG annotations
+- TestNG groups and priorities
 - Data-driven testing
-- Screenshot capture
-- Reporting
-- Logging
+- Cross-browser testing
+- Parameterized testing
+- Screenshot capture on test failure
+- Extent Reports
+- Allure Reports
+- Log4j logging
+- TestNG listeners
+- Email report functionality
 - CI/CD using GitHub Actions
 
-## Project Structure
+---
 
-src/main
- └── java
-     └── com.orangehrm
-         ├── base
-         ├── login
-         ├── admin
-         └── myinfo
+# OrangeHRM Automation Project
 
-src/test
- └── java
-     └── com.orangehrm
-         ├── base
-         ├── login
-         ├── admin
-         └── util
+[OrangeHRM](https://www.orangehrm.com/) is a web-based Human Resource Management application used to manage employee-related activities such as employee information, user accounts, and authentication.
 
-## How to Run
+## What I Automated
 
+### 🔐 Login Module
+
+- Valid and invalid login scenarios
+- Blank username/password validations
+- Forgot Password functionality
+- Cross-browser login testing
+- Parameterized login testing
+
+### 👥 Admin / User Management
+
+- Add User functionality
+- User Management scenarios
+
+---
+
+# Framework Structure
+
+## Base Classes
+
+The framework uses reusable base classes to provide common functionality for Page Objects and Test Classes.
+
+- **BasePage** – Provides common WebDriver functionality and reusable methods for Page Objects.
+- **BaseTest** – Handles browser initialization, application URL configuration, test setup, and shared test resources.
+
+## Page Classes
+
+The framework follows the **Page Object Model (POM)** design pattern. Each application page has a dedicated Page class containing its locators and reusable methods.
+
+- **BasePage** – Common parent class for Page Objects.
+- **LoginPage** – Handles login elements and actions such as entering credentials, clicking Login, and validating login messages.
+- **ForgotYourPasswordPage** – Handles the Forgot Password functionality.
+- **AddUserPage** – Handles the Admin → Add User functionality.
+- **UserManagementPage** – Handles Admin → User Management functionality.
+
+## Test Classes
+
+The `src/test/java` package contains TestNG test classes for validating different OrangeHRM functionalities.
+
+- **LoginTest** – Validates positive and negative login scenarios.
+- **ForgotYourPasswordTest** – Validates Forgot Password functionality.
+- **CrossBrowserLoginTest** – Executes login tests across different browsers.
+- **ParameterizedTesting** – Performs parameterized testing using TestNG parameters.
+- **AddUserTest** – Automates the Admin → Add User functionality.
+- **UserManagementTest** – Validates User Management functionality.
+
+---
+
+# Test Data & Data-Driven Testing
+
+The framework supports **data-driven testing** using TestNG `@DataProvider` and Excel-based test data.
+
+- **BrowserDataProvider** – Provides browser-related data for cross-browser testing.
+- **DataProviderExcelUtil** – Reads test data from Excel files.
+- Test data is separated from test logic for better maintainability and reusability.
+- Supports parameterized and data-driven test execution.
+
+---
+
+# Listeners & Screenshot Capture
+
+The framework uses **TestNG listeners** to monitor test execution and perform actions based on test results.
+
+- **TestListener** – Handles test execution events such as pass, fail, and skip.
+- **ScreenshotListener** – Captures screenshots when test cases fail.
+- Screenshots can be attached to test reports for easier debugging.
+- Listeners are registered using TestNG's `@Listeners` annotation.
+
+---
+
+# Reporting & Logging
+
+The framework provides detailed test execution information using **Extent Reports, Allure Reports, and Log4j**.
+
+- **Extent Reports** – Generates HTML test execution reports.
+- **Allure Reports** – Provides detailed test documentation using annotations such as `@Epic`, `@Feature`, `@Story`, and `@Severity`.
+- **Custom Reports** – Supports customized reporting and screenshot integration.
+- **EmailSender / EmailReportSender** – Supports sending test execution reports through email.
+- **Log4j** – Records test execution logs for debugging and troubleshooting.
+- **Screenshots** – Captured for failed test cases.
+
+---
+
+# CI/CD – GitHub Actions
+
+The framework is integrated with **GitHub Actions** to automatically build and execute the automation tests in a CI environment.
+
+The workflow:
+
+1. Checks out the project from GitHub.
+2. Sets up the required Java environment.
+3. Uses Maven to build the project.
+4. Executes the TestNG test suite.
+5. Helps identify automation failures during code changes.
+6. Supports continuous integration of the automation framework.
+
+---
+
+# Project Structure
+
+```text
+CompleteAutomation-Selenium
+│
+└── automation-web-orangehrm
+    │
+    ├── src
+    │   ├── main
+    │   │   └── java
+    │   │       └── com.orangehrm
+    │   │           ├── base
+    │   │           ├── login
+    │   │           ├── admin
+    │   │           └── myinfo
+    │   │
+    │   └── test
+    │       └── java
+    │           └── com.orangehrm
+    │               ├── base
+    │               ├── login
+    │               ├── admin
+    │               └── util
+    │
+    ├── pom.xml
+    └── testng.xml
+
+```
+# How to Run
+
+Clone the repository and navigate to the automation project:
+
+```bash
+git clone <repository-url>
+cd CompleteAutomation-Selenium/automation-web-orangehrm
+```
+
+Run the test suite using Maven:
+```bash
 mvn clean test
+```
 
-## CI/CD
 
-Tests are automatically executed using GitHub Actions.
+# Key Benefits
+- Reusable and maintainable automation framework
+- Separation of test logic and page interaction logic
+- Data-driven and parameterized testing
+- Cross-browser test execution
+- Automated reporting and logging
+- Screenshot capture for failures
+- CI/CD integration using GitHub Actions
